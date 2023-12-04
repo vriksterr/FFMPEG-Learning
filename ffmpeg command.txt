@@ -1,0 +1,8 @@
+ffmpeg -i "Y:\Media\Movies\Alita Battle Angle (2019)\Alita Battle Angel (2019) [imdbid-tt0437086] - [WEBDL-2160p].mkv" -c:v hevc_nvenc -preset medium -b:v 6000k -minrate 4000k -maxrate 16000k -bufsize 16000k -c:a aac "C:\Users\Administrator\Desktop\Test\output_video.mp4"
+
+
+
+#with resolution changing
+ffmpeg -i "Y:\Media\Movies\Alita Battle Angle (2019)\Alita Battle Angel (2019) [imdbid-tt0437086] - [WEBDL-2160p].mkv" -c:v hevc_nvenc -preset medium -b:v 6000k -minrate 4000k -maxrate 16000k -bufsize 16000k -c:a aac -s 1920x1080 "C:\Users\Administrator\Desktop\Test\output_video.mp4"
+
+ffmpeg -i "C:\Users\Administrator\Desktop\Test\Deshdrohi.mp4" -c:v hevc_nvenc -preset medium -b:v 100k -minrate 100k -maxrate 100k -bufsize 1000k -c:a aac -b:a 64k -s 426x240 "C:\Users\Administrator\Desktop\Test\Converted.mp4"
